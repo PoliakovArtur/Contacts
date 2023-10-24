@@ -33,16 +33,5 @@ public class Contacts {
     }
 
     private void addContact(String contact) {
-        String[] userComponents = contact.split(";");
-        if (userComponents.length != 3) throw new IllegalArgumentException(Messages.ILLEGAL_FORMAT_INPUT);
-        for (int i = 0; i < userComponents.length; i++) {
-            userComponents[i] = userComponents[i].strip();
-        }
-        String fullName = userComponents[0];
-        if (!fullName.matches(FULL_NAME_FORMAT)) throw new IllegalArgumentException(Messages.ILLEGAL_FULL_NAME);
-        String[] fullNameComponents = fullName.split("\\s");
-        for (int i = 0; i < fullNameComponents.length; i++) {
-            String component = fullNameComponents[i];
-        }
     }
 }
