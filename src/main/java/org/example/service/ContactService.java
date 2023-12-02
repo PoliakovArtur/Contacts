@@ -7,7 +7,7 @@ import java.util.Set;
 
 @Service
 public class ContactService {
-    private ContactRepository repository;
+    private final ContactRepository repository;
 
     public ContactService(ContactRepository repository) {
         this.repository = repository;
